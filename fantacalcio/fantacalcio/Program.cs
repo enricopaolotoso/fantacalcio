@@ -11,7 +11,7 @@ namespace fantacalcio
         static int ngolCalciatore;
         static int punteggioCalciatore;
 
-        public calciatore()
+        public calciatore()//costruttore
         {
             nomeCalciatore = "";
             cognomeCalciatore = "";
@@ -20,7 +20,7 @@ namespace fantacalcio
             punteggioCalciatore = 0;
         }
 
-        public void creaCalciatore()
+        public void creaCalciatore()//metodo per aggiungere calciatori al programma
         {
             Console.WriteLine("inserire il nome del calciatore");
             nomeCalciatore = Console.ReadLine();
@@ -29,9 +29,32 @@ namespace fantacalcio
 
         }
 
+
+        static void inserisciPunteggio()//metodo per inserire il punteggio a fine partita di ogni giocatore
+        {
+            Console.WriteLine("inserisci il punteggio di:", calciatore.nomeCalciatore);
+
+            string toconvert = Console.ReadLine();//controllo inserimento stringa numerica
+            int converted = 0;
+            bool result = int.TryParse(toconvert, out converted);
+            if (result == false)
+            {
+                Console.WriteLine("inserisci un valore numerico!");
+                inserisciPunteggio();
+
+            }
+            else
+            {
+                Console.WriteLine("{0}", converted);
+            }
+
+        }
+
         public void incrementoGol()
         {
-
+            Console.WriteLine("inserisci il numero di gol effettuati");
+            
+            //algoritmo di ricerca specifico giocatore
         }
 
 
@@ -42,6 +65,8 @@ namespace fantacalcio
             calciatore calciatore = new calciatore();
             calciatore.cognomeCalciatore="";
             calciatore.incrementoGol();
+
+            inserisciPunteggio();
         }
     }
 

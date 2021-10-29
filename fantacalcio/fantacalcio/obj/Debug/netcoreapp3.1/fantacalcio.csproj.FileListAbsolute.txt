@@ -1,0 +1,13 @@
+E:\4f\fantacalcio\fantacalcio\fantacalcio\bin\Debug\netcoreapp3.1\fantacalcio.exe
+E:\4f\fantacalcio\fantacalcio\fantacalcio\bin\Debug\netcoreapp3.1\fantacalcio.deps.json
+E:\4f\fantacalcio\fantacalcio\fantacalcio\bin\Debug\netcoreapp3.1\fantacalcio.runtimeconfig.json
+E:\4f\fantacalcio\fantacalcio\fantacalcio\bin\Debug\netcoreapp3.1\fantacalcio.runtimeconfig.dev.json
+E:\4f\fantacalcio\fantacalcio\fantacalcio\bin\Debug\netcoreapp3.1\fantacalcio.dll
+E:\4f\fantacalcio\fantacalcio\fantacalcio\bin\Debug\netcoreapp3.1\fantacalcio.pdb
+E:\4f\fantacalcio\fantacalcio\fantacalcio\obj\Debug\netcoreapp3.1\fantacalcio.csproj.AssemblyReference.cache
+E:\4f\fantacalcio\fantacalcio\fantacalcio\obj\Debug\netcoreapp3.1\fantacalcio.AssemblyInfoInputs.cache
+E:\4f\fantacalcio\fantacalcio\fantacalcio\obj\Debug\netcoreapp3.1\fantacalcio.AssemblyInfo.cs
+E:\4f\fantacalcio\fantacalcio\fantacalcio\obj\Debug\netcoreapp3.1\fantacalcio.csproj.CoreCompileInputs.cache
+E:\4f\fantacalcio\fantacalcio\fantacalcio\obj\Debug\netcoreapp3.1\fantacalcio.dll
+E:\4f\fantacalcio\fantacalcio\fantacalcio\obj\Debug\netcoreapp3.1\fantacalcio.pdb
+E:\4f\fantacalcio\fantacalcio\fantacalcio\obj\Debug\netcoreapp3.1\fantacalcio.genruntimeconfig.cache
