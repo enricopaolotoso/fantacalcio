@@ -20,19 +20,19 @@ namespace fantacalcio
             punteggioCalciatore = 0;
         }
 
-        public void creaCalciatore()//metodo per aggiungere calciatori al programma
+        static public void creaCalciatore(string nome, string cognome)//metodo per aggiungere calciatori al programma
         {
-            Console.WriteLine("inserire il nome del calciatore");
-            nomeCalciatore = Console.ReadLine();
-            Console.WriteLine("inserire il cognome del calciatore");
-            cognomeCalciatore = Console.ReadLine();
+            
+            nomeCalciatore = nome;
+            
+            cognomeCalciatore = cognome;
 
         }
 
 
-        static void inserisciPunteggio()//metodo per inserire il punteggio a fine partita di ogni giocatore
+        static void inserisciPunteggio()//metodo per inserire il punteggio di ogni giocatore a fine partita
         {
-            Console.WriteLine("inserisci il punteggio di:", calciatore.nomeCalciatore);
+            Console.WriteLine("inserisci il punteggio di:{0}{1}", calciatore.nomeCalciatore, calciatore.cognomeCalciatore);
 
             string toconvert = Console.ReadLine();//controllo inserimento stringa numerica
             int converted = 0;
@@ -50,26 +50,50 @@ namespace fantacalcio
 
         }
 
-        public void incrementoGol()
+        static public void incrementoGol(int gol)
         {
-            Console.WriteLine("inserisci il numero di gol effettuati");
-            
-            //algoritmo di ricerca specifico giocatore
+            ngolCalciatore = gol;
+
         }
 
 
-        
-        
         static void Main(string[] args)
         {
             calciatore calciatore = new calciatore();
-            calciatore.cognomeCalciatore="";
-            calciatore.incrementoGol();
+            intGol();
+            Console.ReadKey();
 
-            inserisciPunteggio();
+            intNomeCognome();
+            Console.ReadKey();
         }
+
+        static public void intGol()
+        {
+            int gol = 0;
+            Console.WriteLine("inserisci il numero di gol effettuati");
+            gol = Convert.ToInt32(Console.ReadLine());
+            calciatore.incrementoGol(gol);
+            Console.WriteLine("{0}", calciatore.ngolCalciatore);
+        }
+
+        static public void intNomeCognome()
+        {
+            string nome = "";
+            string cognome = "";
+            Console.WriteLine("inserire il nome del calciatore");
+            nome = Console.ReadLine();
+            Console.WriteLine("inserire il cognome del calciatore");
+            cognome = Console.ReadLine();
+            calciatore.creaCalciatore(nome,cognome);
+
+        }
+
+        
     }
 
+    
+    
+    
     class utente
     {
 
